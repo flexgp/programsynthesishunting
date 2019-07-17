@@ -1,0 +1,22 @@
+<predefined> ::= 'i0 = int(); i1 = int(); i2 = int()'
+'f0 = float(); f1 = float(); f2 = float()'
+'res0 = float()'
+<code>
+<code> ::= <code><assign>'\n'|<assign>'\n'
+<assign> ::= <int_assign>|<float_assign>
+<number> ::= <number><num>|<num>
+<num> ::= '0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'
+<int_var> ::= 'i0'|'i1'|'i2'|'in0'
+<int_assign> ::= <int_var>' = '<int>|<int_var>' '<arith_ops>'= '<int>
+<int> ::= <int_var>|'int('<number>'.0)'|<int_operation>|<int_specialop>
+<int_operation> ::= '( '<int>' '<arith_ops>' '<int>' )'|<int_arith_ops_protected>'('<int>','<int>')'
+<int_specialop> ::= 'min('<int>', '<int>')'|'max('<int>', '<int>')'|'abs('<int>')'
+<arith_ops> ::= '+'
+<int_arith_ops_protected> ::= 'divInt'|'mod'
+<float_var> ::= 'f0'|'f1'|'f2'|'in1'|'res0'
+<float_assign> ::= <float_var>' = '<float>|<float_var>' '<arith_ops>'= '<float>
+<float> ::= <int>|<float_var>|<number>'.'<number>|<float_operation>|<float_specialop>
+<float_operation> ::= '( '<float>' '<arith_ops>' '<float>' )'|<float_arith_ops_protected>'('<float>','<float>')'
+<float_specialop> ::= 'math.ceil('<float>')'|'math.floor('<float>')'|'round('<float>')'|'min('<float>', '<float>')'|'max('<float>', '<float>')'|'abs('<float>')'
+<float_arith_ops_protected> ::= 'div'|'divInt'|'mod'
+

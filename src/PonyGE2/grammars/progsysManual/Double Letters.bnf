@@ -1,0 +1,25 @@
+<predefined> ::= 'b0 = bool(); b1 = bool(); b2 = bool()'
+'i0 = int(); i1 = int(); i2 = int()'
+'s0 = str(); s1 = str(); s2 = str()'
+'res0 = str()'
+<code>
+<code> ::= <code><statement>'\n'|<statement>'\n'
+<statement> ::= <call>|<assign>|<compound_stmt>
+<compound_stmt> ::= <for>|<if>
+<assign> ::= <bool_var>' = '<bool>|<string_var>' = '<string>
+<for> ::= <for_iter_string>
+<call> ::= <compound_stmt>
+<bool_var> ::= 'b0'|'b1'|'b2'
+<bool> ::= <bool_bool>|<bool_string>
+<bool_string> ::= <string>' in '<string>|<string>' not in '<string>|<string>' == '<string>
+<bool_bool> ::= <bool_var>|<bool_const>|'not '<bool>|'( '<bool>' '<bool_op>' '<bool>' )'
+<bool_op> ::= 'and'|'or'
+<bool_const> ::= 'True'|'False'
+<if> ::= 'if '<bool>':{:\n'<code>':}'|'if '<bool>':{:\n'<code>':}else:{:\n'<code>':}'
+<number> ::= '2'
+<int_var> ::= 'i0'|'i1'|'i2'
+<int> ::= <int_var>|'int('<number>'.0)'
+<string_var> ::= 's0'|'s1'|'in0'|'res0'
+<for_iter_string> ::= 'loopBreak% = 0\nfor '<string_var>' in '<string>':{:\n'<code>'\nif loopBreak% > loopBreakConst or stop:{:\nbreak\n:}loopBreak% += 1\n:}'
+<string> ::= <string_var>|"'"<string_literal>"'"|'('<string_var>' + '<string>')'|'('<string_var>' * '<int>')'
+<string_literal> ::= 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'|'!'

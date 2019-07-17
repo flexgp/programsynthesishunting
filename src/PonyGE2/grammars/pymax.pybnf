@@ -1,0 +1,31 @@
+# see fitness/pymax.py for docs.
+
+<p>::= <defp>{::}<callp>
+<defp> ::= def p():{:x = 0.0{::}<code>{::}return x:}
+<callp> ::= XXX_output_XXX = p()
+
+# a function is a list of statements
+<code> ::= <stmt> | <stmt>{::}<code>
+
+# a statement is either an assignment or a for-loop
+<stmt> ::= x = <expr> | <for>
+
+# we don't allow recursive expressions (it becomes easy to hit inf),
+# but we do allow loops, including nested loops.
+<expr> ::= <const> | x | (x + <const>) | (x * <const>)
+<const> ::= 0.5
+
+# we could get nested loops where the inner overwrites the loop
+# variable of the outer, eg:
+
+# for i in range(3):
+#   for i in range(4):
+#     <do stuff>
+
+# but that's ok, because in Py3 scope is done correctly and we are not
+# using the value of i in <do stuff>.
+<for> ::= for i in <seq>:{:<code>:}
+<seq> ::= [<csitems>] | range(<i>+1)
+<i> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6
+<csitems> ::= <item> | <item>, <csitems>
+<item> ::= <i>

@@ -1,0 +1,7 @@
+<assign> ::= <float_assign>
+<float_var> ::= 'f0'|'f1'|'f2'
+<float_assign> ::= <float_var>' = '<float>|<float_var>' '<arith_ops>'= '<float>
+<float> ::= <int>|<float_var>|<number>'.'<number>|<float_operation>|<float_specialop>
+<float_operation> ::= '( '<float>' '<arith_ops>' '<float>' )'|<float_arith_ops_protected>'('<float>','<float>')'
+<float_specialop> ::= 'math.ceil('<float>')'|'math.floor('<float>')'|'round('<float>')'|'min('<float>', '<float>')'|'max('<float>', '<float>')'|'abs('<float>')'
+<float_arith_ops_protected> ::= 'div'|'divInt'|'mod'

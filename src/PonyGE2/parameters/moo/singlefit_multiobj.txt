@@ -1,0 +1,17 @@
+GRAMMAR_FILE:           moo/moo_zdt123.bnf
+FITNESS_FUNCTION:       multi_objective.singlefit_multiobj
+CODON_SIZE:             1000
+POPULATION_SIZE:        100
+GENERATIONS:            20
+MUTATION_PROBABILITY:   0.01
+CROSSOVER_PROBABILITY:  0.75
+INITIALISATION:         uniform_genome
+TOURNAMENT_SIZE:        2
+INIT_GENOME_LENGTH:     1230
+CROSSOVER:              fixed_onepoint
+MUTATION:               int_flip_per_codon
+SELECTION:              nsga2_selection
+REPLACEMENT:            nsga2_replacement
+VERBOSE:                True
+CACHE:                  True
+SAVE_PLOTS:             True

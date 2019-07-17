@@ -1,0 +1,32 @@
+<p> ::= global state{::}state = <i>{::}<defp>{::}<callp>
+<defp> ::= def p():{:global state{::}<defadf1>{::}<defadf2>{::}<defhoadf1>{::}<code>{::}yield from hoadf1(<adf>, <item>):}
+<defadf1> ::= def adf1(n):{:global state{::}<code_adf2_n>{::}yield from <seq>:}
+<defadf2> ::= def adf2(n):{:global state{::}<code_n>{::}yield from <seq>:}
+<defhoadf1> ::= def hoadf1(f, n):{:global state{::}<code_f_n>:}
+<callp> ::= XXX_output_XXX=p()
+
+<adf> ::= adf1 | adf2
+
+<seq> ::= [<csitems>] | map(<f_i_i>, <seq>) | range(<i>+1)
+<csitems> ::= <item> | <item>, <csitems>
+<item> ::= state | <i> | <f_i_i>(<item>)
+<f_i_i> ::= succ | pred
+
+#| double(<item>) | sq(<item>)
+
+<code> ::= <stmt> | <stmt>{::}<code>
+<code_n> ::= <stmt_n> | <stmt_n>{::}<code_n>
+<code_x> ::= <stmt_x> | <stmt_x>{::}<code_x>
+<stmt> ::= yield <item> | yield from <seq> | <if> | <for> | state = <item>
+<stmt_x> ::= yield x | state = x | <stmt>
+<stmt_n> ::= yield n | state = n | <stmt>
+<code_adf2_n> ::= <stmt_adf2> | <stmt_n> | <stmt_adf2>{::}<code_adf2_n> | <stmt_n>{::}<code_adf2_n>
+<stmt_adf2> ::= yield from adf2(<item>) | <stmt>
+<code_f_n> ::= yield from f(n) | yield from f(<item>) | yield n
+
+<if> ::= if <cond>:{:<code>:}
+<for> ::= for x in <seq>:{:<code_x>:}
+<i> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6
+
+<cond> ::= (state <op> <item>)
+<op> ::= > | < | ==

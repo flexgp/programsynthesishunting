@@ -1,0 +1,26 @@
+CACHE:                  True
+CODON_SIZE:             100
+CROSSOVER:              variable_onepoint
+CROSSOVER_PROBABILITY:  0.25
+DEBUG:                  False
+GENERATIONS:            50
+MAX_GENOME_LENGTH:      500
+GRAMMAR_FILE:           letter.bnf
+INITIALISATION:         uniform_tree
+INVALID_SELECTION:      False
+MAX_INIT_TREE_DEPTH:    13
+MAX_TREE_DEPTH:         20
+MUTATION:               int_flip_per_codon
+MUTATION_PROBABILITY:   0.09
+POPULATION_SIZE:        4
+FITNESS_FUNCTION:       string_match
+REPLACEMENT:            generational
+SELECTION:              tournament
+TARGET:                 Golden!
+TOURNAMENT_SIZE:        2
+VERBOSE:                False
+MULTIAGENT:             True
+AGENT_SIZE:             200
+INTERACTION_PROBABILITY:0.7
+SEARCH_LOOP:            search_loop
+STEP:                   step

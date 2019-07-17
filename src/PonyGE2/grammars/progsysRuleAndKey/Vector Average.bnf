@@ -1,0 +1,33 @@
+<predefined> ::= 'i0 = int(); i1 = int(); i2 = int()'
+'f0 = float(); f1 = float(); f2 = float()'
+'lf0 = []; lf1 = []; lf2 = []'
+'res0 = float()'
+<code>
+<code> ::= <code><statement>'\n'|<statement>'\n'
+<statement> ::= <call>|<assign>|<for>
+<assign> ::= <int_assign>|<float_assign>|<list_float_var>' = '<list_float>
+<for> ::= <for_float>
+<call> ::= <call_float>
+<in_list_comp_op> ::= 'in'|'not in'
+<list_comp_op> ::= '=='|'!='
+<number> ::= <number><num>|<num>
+<num> ::= '0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'
+<int_var> ::= 'i0'|'i1'|'i2'
+<int_assign> ::= <int_var>' = '<int>|<int_var>' '<arith_ops>'= '<int>
+<int> ::= <int_var>|'int('<number>'.0)'|<int_operation>|<int_specialop>
+<int_operation> ::= '( '<int>' '<arith_ops>' '<int>' )'|<int_arith_ops_protected>'('<int>','<int>')'
+<int_specialop> ::= 'min('<int>', '<int>')'|'max('<int>', '<int>')'|'abs('<int>')'|'len('<list_float>')'
+<arith_ops> ::= '+'
+<int_arith_ops_protected> ::= 'divInt'|'mod'
+<float_var> ::= 'f0'|'f1'|'f2'|'res0'
+<float_assign> ::= <float_var>' = '<float>|<float_var>' '<arith_ops>'= '<float>
+<float> ::= <int>|<float_var>|<number>'.'<number>|<float_operation>|<float_specialop>
+<float_operation> ::= '( '<float>' '<arith_ops>' '<float>' )'|<float_arith_ops_protected>'('<float>','<float>')'
+<float_specialop> ::= 'math.ceil('<float>')'|'math.floor('<float>')'|'round('<float>')'|'min('<float>', '<float>')'|'max('<float>', '<float>')'|'abs('<float>')'|'getIndexFloatList('<list_float>','<int>')'
+<float_arith_ops_protected> ::= 'div'|'divInt'|'mod'
+<for_float> ::= 'loopBreak% = 0\nfor '<int_var>' in range(len('<list_float>')):{:\n'<code>'\nif loopBreak% > loopBreakConst or stop:{:\nbreak\n:}loopBreak% += 1\n:}'|'loopBreak% = 0\nfor '<float_var>' in '<list_float>':{:\n'<code>'\nif loopBreak% > loopBreakConst or stop:{:\nbreak\n:}loopBreak% += 1\n:}'
+<call_float> ::= <list_float_var>'.append('<float>')'|<list_float_var>'.insert('<int>','<float>')'|'deleteListItem('<list_float>', '<int>')'|'setListIndexTo('<list_float>', '<int>', '<float>')'|<list_float_var>'.reverse()'
+<list_float_var> ::= 'lf0'|'lf1'|'lf2'|'in0'
+<list_float> ::= <list_float_var>|<list_float_slice>
+<list_float_slice> ::= <list_float>'['<int>':'<int>']'|<list_float>'[:'<int>']'|<list_float>'['<int>':]'
+

@@ -1,0 +1,142 @@
+{
+  "Checksum":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["string"],
+    "OutputType":["string"]
+  },
+  "Collatz Numbers":{
+    "DataTypes":["bool", "int", "float"],
+    "InputTypes":["int"],
+    "OutputType":["int"]
+  },
+  "Compare String Lengths":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["string", "string", "string"],
+    "OutputType":["bool"]
+  },
+  "Count Odds":{
+    "DataTypes":["bool", "int", "list_int"],
+    "InputTypes":["list_int"],
+    "OutputType":["int"]
+  },
+  "Digits":{
+    "DataTypes":["bool", "int", "list_int"],
+    "InputTypes":["int"],
+    "OutputType":["list_int"]
+  },
+  "Double Letters":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["string"],
+    "OutputType":["string"]
+  },
+  "Even Squares":{
+    "DataTypes":["bool", "int", "list_int"],
+    "InputTypes":["int"],
+    "OutputType":["list_int"]
+  },
+  "For Loop Index":{
+    "DataTypes":["bool", "int", "list_int"],
+    "InputTypes":["int", "int", "int"],
+    "OutputType":["list_int"]
+  },
+  "Grade":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["int", "int", "int", "int", "int"],
+    "OutputType":["string"]
+  },
+  "Last Index of Zero":{
+    "DataTypes":["bool", "int", "list_int"],
+    "InputTypes":["list_int"],
+    "OutputType":["int"]
+  },
+  "Median":{
+    "DataTypes":["bool", "int"],
+    "InputTypes":["int", "int", "int"],
+    "OutputType":["int"]
+  },
+  "Mirror Image":{
+    "DataTypes":["bool", "int", "list_int"],
+    "InputTypes":["list_int", "list_int"],
+    "OutputType":["bool"]
+  },
+  "Negative To Zero":{
+    "DataTypes":["bool", "int", "list_int"],
+    "InputTypes":["list_int"],
+    "OutputType":["list_int"]
+  },
+  "Number IO":{
+    "DataTypes":["int", "float"],
+    "InputTypes":["int", "float"],
+    "OutputType":["float"]
+  },
+  "Pig Latin":{
+    "DataTypes":["bool", "int", "string", "list_string"],
+    "InputTypes":["string"],
+    "OutputType":["string"]
+  },
+  "Replace Space With Newline":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["string"],
+    "OutputType":["string", "int"]
+  },
+  "Scrabble Score":{
+    "DataTypes":["bool", "int", "string", "list_int"],
+    "InputTypes":["string"],
+    "OutputType":["int"]
+  },
+  "Small Or Large":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["int"],
+    "OutputType":["string"]
+  },
+  "Smallest":{
+    "DataTypes":["bool", "int"],
+    "InputTypes":["int", "int", "int", "int"],
+    "OutputType":["int"]
+  },
+  "String Lengths Backwards":{
+    "DataTypes":["bool", "int", "string", "list_int", "list_string"],
+    "InputTypes":["list_string"],
+    "OutputType":["list_int"]
+  },
+  "Sum of Squares":{
+    "DataTypes":["bool", "int", "list_int"],
+    "InputTypes":["int"],
+    "OutputType":["int"]
+  },
+  "Super Anagrams":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["string", "string"],
+    "OutputType":["bool"]
+  },
+  "Syllables":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["string"],
+    "OutputType":["int"]
+  },
+  "Vector Average":{
+    "DataTypes":["int", "float", "list_float"],
+    "InputTypes":["list_float"],
+    "OutputType":["float"]
+  },
+  "Vectors Summed":{
+    "DataTypes":["int", "list_int"],
+    "InputTypes":["list_int", "list_int"],
+    "OutputType":["list_int"]
+  },
+  "Wallis Pi":{
+    "DataTypes":["bool", "int", "float"],
+    "InputTypes":["int"],
+    "OutputType":["float"]
+  },
+  "Word Stats":{
+    "DataTypes":["bool", "int", "float", "string", "list_int", "list_float", "list_string"],
+    "InputTypes":["string"],
+    "OutputType":["list_int", "int", "float"]
+  },
+  "X-Word Lines":{
+    "DataTypes":["bool", "int", "string"],
+    "InputTypes":["string", "int"],
+    "OutputType":["string"]
+  }
+}

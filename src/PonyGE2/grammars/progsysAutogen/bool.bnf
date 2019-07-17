@@ -1,0 +1,8 @@
+<assign> ::= <bool_var>' = '<bool>
+<bool_var> ::= 'b0'|'b1'|'b2'
+<comp_op> ::= '<'|'>'|'=='|'>='|'<='|'!='
+<bool> ::= <bool_bool>
+<bool_bool> ::= <bool_var>|<bool_const>|'not '<bool>|'( '<bool>' '<bool_op>' '<bool>' )'
+<bool_op> ::= 'and'|'or'
+<bool_const> ::= 'True'|'False'
+<if> ::= 'if '<bool>':{:\n'<code>':}'|'if '<bool>':{:\n'<code>':}else:{:\n'<code>':}'

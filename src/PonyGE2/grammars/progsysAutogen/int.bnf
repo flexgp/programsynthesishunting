@@ -1,0 +1,10 @@
+<assign> ::= <int_assign>
+<number> ::= <number><num>|<num>
+<num> ::= '0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'
+<int_var> ::= 'i0'|'i1'|'i2'
+<int_assign> ::= <int_var>' = '<int>|<int_var>' '<arith_ops>'= '<int>
+<int> ::= <int_var>|'int('<number>'.0)'|<int_operation>|<int_specialop>
+<int_operation> ::= '( '<int>' '<arith_ops>' '<int>' )'|<int_arith_ops_protected>'('<int>','<int>')'
+<int_specialop> ::= 'min('<int>', '<int>')'|'max('<int>', '<int>')'|'abs('<int>')'
+<arith_ops> ::= '+'|'-'|'*'
+<int_arith_ops_protected> ::= 'divInt'|'mod'

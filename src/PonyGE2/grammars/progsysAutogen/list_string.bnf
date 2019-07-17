@@ -1,0 +1,6 @@
+<assign> ::= <list_string_var>' = '<list_string>
+<for_string> ::= 'loopBreak% = 0\nfor '<int_var>' in range(len('<list_string>')):{:\n'<code>'\nif loopBreak% > loopBreakConst or stop:{:\nbreak\n:}loopBreak% += 1\n:}'|'loopBreak% = 0\nfor '<string_var>' in '<list_string>':{:\n'<code>'\nif loopBreak% > loopBreakConst or stop:{:\nbreak\n:}loopBreak% += 1\n:}'
+<call_string> ::= <list_string_var>'.append('<string>')'|<list_string_var>'.insert('<int>','<string>')'|'deleteListItem('<list_string>', '<int>')'|'setListIndexTo('<list_string>', '<int>', '<string>')'|<list_string_var>'.reverse()'
+<list_string_var> ::= 'ls0'|'ls1'|'ls2'
+<list_string> ::= <list_string_var>|<list_string_slice>
+<list_string_slice> ::= <list_string>'['<int>':'<int>']'|<list_string>'[:'<int>']'|<list_string>'['<int>':]'

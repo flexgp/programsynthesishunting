@@ -1,0 +1,114 @@
+{
+  "Checksum":{
+    "Positive":["saveOrd", "saveChr", "for", "64", "+", "mod"],
+    "Negative":[]
+  },
+  "Collatz Numbers":{
+    "Positive":[],
+    "Negative":[]
+  },
+  "Compare String Lengths":{
+    "Positive":["len", "<", "True", "False"],
+    "Negative":[]
+  },
+  "Count Odds":{
+    "Positive":["mod", "for", "if", "=="],
+    "Negative":[]
+  },
+  "Digits":{
+    "Positive":["int_to_int_array", "reverse"],
+    "Negative":[]
+  },
+  "Double Letters":{
+    "Positive":["for", "*", "res0 = (res0 +", "== !"],
+    "Negative":[]
+  },
+  "Even Squares":{
+    "Positive":["range(len(list(saveRange", "for", "mod", "==", "*", "append"],
+    "Negative":[]
+  },
+  "For Loop Index":{
+    "Positive":["range(len(list(saveRange", "for", "append"],
+    "Negative":[]
+  },
+  "Grade":{
+    "Positive":["A", "B", "C", "D", "F", "if", ">"],
+    "Negative":[]
+  },
+  "Last Index of Zero":{
+    "Positive":["for", "range", "==", "getIndexIntList"],
+    "Negative":[]
+  },
+  "Median":{
+    "Positive":["min", "max"],
+    "Negative":[]
+  },
+  "Mirror Image":{
+    "Positive":["reverse", "=="],
+    "Negative":[]
+  },
+  "Negative To Zero":{
+    "Positive":["for", "if", "else", "<"],
+    "Negative":[]
+  },
+  "Number IO":{
+    "Positive":["+"],
+    "Negative":[]
+  },
+  "Pig Latin":{
+    "Positive":["ay", "split", "join", "append", "aeiou", "getCharFromString"],
+    "Negative":[]
+  },
+  "Replace Space With Newline":{
+    "Positive":[],
+    "Negative":[]
+  },
+  "Scrabble Score":{
+    "Positive":[],
+    "Negative":[]
+  },
+  "Small Or Large":{
+    "Positive":["1000", "2000", "small", "large"],
+    "Negative":[]
+  },
+  "Smallest":{
+    "Positive":["min"],
+    "Negative":[]
+  },
+  "String Lengths Backwards":{
+    "Positive":["reverse", "for", "len", "append"],
+    "Negative":[]
+  },
+  "Sum of Squares":{
+    "Positive":["range(len(list(saveRange", "*"],
+    "Negative":[]
+  },
+  "Super Anagrams":{
+    "Positive":["for", "if", "not in", "False"],
+    "Negative":[]
+  },
+  "Syllables":{
+    "Positive":["for", "in 'aeiou'", "+= int(1.0)"],
+    "Negative":["while"]
+  },
+  "Vector Average":{
+    "Positive":["for", "len", "div("],
+    "Negative":[]
+  },
+  "Vectors Summed":{
+    "Positive":["for", "+", "append", "getIndexIntList"],
+    "Negative":[]
+  },
+  "Wallis Pi":{
+    "Positive":[],
+    "Negative":[]
+  },
+  "Word Stats":{
+    "Positive":[],
+    "Negative":[]
+  },
+  "X-Word Lines":{
+    "Positive":[],
+    "Negative":[]
+  }
+}

@@ -1,0 +1,4 @@
+CODON_SIZE:             100000
+GRAMMAR_FILE:           letter.bnf
+REVERSE_MAPPING_TARGET: Reverse map this sentence and return a viable genome
+VERBOSE:                True

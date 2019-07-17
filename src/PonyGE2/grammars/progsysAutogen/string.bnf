@@ -1,0 +1,13 @@
+<assign> ::= <string_var>' = '<string>
+<string_var> ::= 's0'|'s1'|'s2'
+<string_const_part> ::= <string_const_part><string_literal>|<string_literal>
+<for_iter_string> ::= 'loopBreak% = 0\nfor '<string_var>' in '<string>':{:\n'<code>'\nif loopBreak% > loopBreakConst or stop:{:\nbreak\n:}loopBreak% += 1\n:}'
+<string> ::= <string_var>|"'"<string_const_part>"'"|<string_slice>|'('<string>' + '<string>')'|<string_specialop>
+<string_specialop> ::= 'getCharFromString('<string>', '<int>')'|'saveChr('<int>')'|<string>'.capitalize()'|<string_strip>
+<string_strip> ::= <string>'.lstrip()'|<string>'.rstrip()'|<string>'.strip()'|<string>'.lstrip('<string>')'|<string>'.rstrip('<string>')'|<string>'.strip('<string>')'
+<string_slice> ::= <string>'['<int>':'<int>']'|<string>'[:'<int>']'|<string>'['<int>':]'
+<string_literal> ::= <string_alpha_up>|<string_alpha_low>|<string_alpha_num>|<string_nonalphanum>
+<string_alpha_up> ::= 'A'|'B'|'C'|'D'|'E'|'F'|'G'|'H'|'I'|'J'|'K'|'L'|'M'|'N'|'O'|'P'|'Q'|'R'|'S'|'T'|'U'|'V'|'W'|'X'|'Y'|'Z'
+<string_alpha_low> ::= 'a'|'b'|'c'|'d'|'e'|'f'|'g'|'h'|'i'|'j'|'k'|'l'|'m'|'n'|'o'|'p'|'q'|'r'|'s'|'t'|'u'|'v'|'w'|'x'|'y'|'z'
+<string_alpha_num> ::= '0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'
+<string_nonalphanum> ::= ''|'\\\n'|'\\\t'|' '|'!'|'"'|'#'|'$'|'%'|'&'|"\\'"|'('|')'|'*'|'+'|','|'-'|'.'|'/'|':'|';'|'<'|'='|'>'|'?'|'@'|'['|'\\\\'|']'|'^'|'_'|'`'

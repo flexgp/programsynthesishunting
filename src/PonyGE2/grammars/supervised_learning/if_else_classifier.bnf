@@ -1,0 +1,6 @@
+<cf> ::= np.where(<cond>, <cf>, <cf>) | <os>
+<cond> ::= (<var> == <is>) | <cond> & (<var> == <is>)
+<is> ::= GE_RANGE:dataset_n_is
+<os> ::= GE_RANGE:dataset_n_os
+<var> ::= x[<varidx>]
+<varidx> ::= GE_RANGE:dataset_n_vars

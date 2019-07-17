@@ -1,0 +1,100 @@
+{
+  "length": {
+    "<int_specialop>": "len"},
+  "reverse": {
+    "<call_int>": "reverse",
+    "<call_float>": "reverse",
+    "<call_string>": "reverse"},
+  "replace": {
+    "<comp_op>": "==",
+    "<bool_string>": "==",
+    "<compound_stmt>": "for"
+  },
+  ">": {
+    "<comp_op>": ">"
+  },
+  "≥": {
+    "<comp_op>": ">="
+  },
+  "greater": {
+    "<comp_op>": ">"
+  },
+  "<": {
+    "<comp_op>": "<"
+  },
+  "≤": {
+    "<comp_op>": "<="
+  },
+  "less": {
+    "<comp_op>": "<"
+  },
+  "equals": {
+    "<comp_op>": "==",
+    "<bool_string>": "=="
+  },
+  "=": {
+    "<comp_op>": "==",
+    "<bool_string>": "=="
+  },
+  "!=": {
+    "<comp_op>": "!=",
+    "<bool_string>": "!="
+  },
+  "not equal": {
+    "<comp_op>": "!=",
+    "<bool_string>": "!="
+  },
+  "smallest": {
+    "<int_specialop>": "min",
+    "<float_specialop>": "min"
+  },
+  "least": {
+    "<int_specialop>": "min",
+    "<float_specialop>": "min"
+  },
+  "greatest": {
+    "<int_specialop>": "max",
+    "<float_specialop>": "max"
+  },
+  "most": {
+    "<int_specialop>": "max",
+    "<float_specialop>": "max"
+  },
+  "minimum": {
+    "<int_specialop>": "min",
+    "<float_specialop>": "min"
+  },
+  "maximum": {
+    "<int_specialop>": "max",
+    "<float_specialop>": "max"
+  },
+  "ASCII": {
+    "<string_specialop>": "saveChr",
+    "<int_specialop>": "saveOrd"
+  },
+  "add": {
+    "<arith_ops>": "+"
+  },
+  "sum": {
+    "<arith_ops>": "+"
+  },
+  "+": {
+    "<arith_ops>": "+"
+  },
+  "minus": {
+    "<arith_ops>": "-"
+  },
+  "subtract": {
+    "<arith_ops>": "-"
+  },
+  "multiply": {
+    "<arith_ops>": "*"
+  },
+  "product": {
+    "<arith_ops>": "*"
+  },
+  "remove whitespace": {
+    "<string_specialop>": "string_strip"
+  }
+}
+

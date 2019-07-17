@@ -1,0 +1,192 @@
+{
+  "Checksum": {
+    "<string_const_part>": [
+      " "
+    ],
+    "<number>": [
+      "64"
+    ],
+    "<arith_ops>": [
+      "+"
+    ]
+  },
+  "Compare String Lengths": {
+    "<comp_op>": [
+      "<",
+      ">"
+    ]
+  },
+  "Double Letters": {
+    "<string_const_part>": [
+      "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "!",
+      "!!!"
+    ],
+    "<number>": [
+      1,
+      2,
+      3
+    ]
+  },
+  "Even Squares": {
+    "<number>": [
+      "0",
+      "2"
+    ],
+    "<comp_op>": [
+      "<",
+      "=="
+    ],
+    "<arith_ops>": [
+      "*"
+    ]
+  },
+
+  "Grade": {
+    "<string_const_part>": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F"
+    ],
+    "<comp_op>": [
+      ">",
+      "<="
+    ]
+  },
+  "Last Index of Zero": {
+    "<number>": [
+      "0"
+    ],
+    "<comp_op>": [
+      "==",
+      "!="
+    ]
+  },
+  "Median": {
+  },
+  "Mirror Image": {
+    "<string_const_part>": [""],
+    "<number>": [],
+    "<comp_op>": ["=="],
+    "<arith_ops>": []
+  },
+  "Negative To Zero": {
+    "<number>": [
+      "0"
+    ],
+    "<comp_op>": [
+      "<",
+      ">"
+    ]
+  },
+  "Small Or Large": {
+    "<string_const_part>": [
+      "small",
+      "large"
+    ],
+    "<number>": [
+      1000,
+      2000
+    ],
+    "<comp_op>": [
+      "<",
+      ">="
+    ]
+  },
+  "Vectors Summed": {
+    "<arith_ops>": [
+      "+"
+    ]
+  },
+  "Count Odds": {
+    "<number>": [
+      0,
+      1,
+      2
+    ],
+    "<comp_op>": [
+      "<",
+      ">",
+      "==",
+      "!="
+    ],
+    "<arith_ops>": [
+      "+",
+      "-"
+    ]
+  },
+  "Digits": {
+    "<number>": [""],
+    "<comp_op>": [],
+    "<arith_ops>": ["+"]
+  },
+  "For Loop Index": {
+    "<number>": [],
+    "<comp_op>": ["<"],
+    "<arith_ops>": ["+"]
+  },
+  "Number IO": {
+    "<number>": [],
+    "<comp_op>": [],
+    "<arith_ops>": [
+      "+"
+    ]
+  },
+  "Super Anagrams": {
+    "<string_const_part>": [""],
+    "<number>": [],
+    "<comp_op>": [],
+    "<arith_ops>": []
+  },
+  "Smallest": {
+    "<number>": [],
+    "<comp_op>": [
+      "<",
+      ">",
+      ">=",
+      "<="
+    ],
+    "<arith_ops>": []
+  },
+  "String Lengths Backwards": {
+    "<string_const_part>": [""],
+    "<number>": [],
+    "<comp_op>": [],
+    "<arith_ops>": []
+  },
+  "Sum of Squares": {
+    "<number>": [
+      "0"
+    ],
+    "<comp_op>": [],
+    "<arith_ops>": [
+      "+",
+      "*"
+    ]
+  },
+  "Syllables": {
+    "<string_const_part>": [
+      "aeiou",
+      "bcdfghjklmnpqrstvwxyz",
+      "a",
+      "e",
+      "i",
+      "o",
+      "u"
+    ],
+    "<number>": [],
+    "<comp_op>": [],
+    "<arith_ops>": [
+      "+"
+    ]
+  },
+  "Vector Average": {
+    "<number>": [],
+    "<arith_ops>": [
+      "+"
+    ]
+  }
+}
+
